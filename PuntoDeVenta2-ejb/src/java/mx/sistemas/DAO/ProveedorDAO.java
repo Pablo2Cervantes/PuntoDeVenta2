@@ -51,6 +51,7 @@ public class ProveedorDAO implements Serializable{
         em.getTransaction().commit();
         return true;
     }
+    //robe y migue me la pelan
     public Proveedor getPorId(String id){
         Query q = em.createNamedQuery("Proveedor.findById");
         q.setParameter("id", id);
